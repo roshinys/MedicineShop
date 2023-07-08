@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import MedicineContext from "../../Store/medicine-context";
-import MedicineItem from "./MedicineItem";
+import MedicineContext from "../../../Store/Medicine/medicine-context";
+import MedicineItem from "../MedicineItem/MedicineItem";
 
 function MedicineList() {
   const medCtx = useContext(MedicineContext);

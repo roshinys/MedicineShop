@@ -2,8 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import MedicineContextProvider from "./Store/MedicineContextProvider";
-import CartContextProvider from "./Store/CartContextProvider";
+import CartContextProvider from "./Store/Cart/CartContextProvider";
+import MedicineContextProvider from "./Store/Medicine/MedicineContextProvider";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

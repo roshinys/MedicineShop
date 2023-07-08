@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
-import MedicineContext from "../../Store/medicine-context";
-import CartContext from "../../Store/cart-context";
+import MedicineContext from "../../../Store/Medicine/medicine-context";
+import CartContext from "../../../Store/Cart/cart-context";
 import styles from "./MedicineItem.module.css";
 
 function MedicineItem(props) {
@@ -27,7 +27,7 @@ function MedicineItem(props) {
       <p>{props.medicine.quantity}</p>
       <button
         onClick={updateQuantityHandler}
-        className={!medAvailable && styles["invalid"]}
+        className={!medAvailable ? styles.invalid : undefined}
       >
         {medAvailable ? "Add To Bill" : "Out Of Stock"}
       </button>

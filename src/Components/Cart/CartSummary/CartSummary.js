@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import styles from "./CartSummary.module.css";
-import CartContext from "../../Store/cart-context";
+import CartContext from "../../../Store/Cart/cart-context";
 
 function CartSummary() {
   const ctx = useContext(CartContext);

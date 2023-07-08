@@ -1,6 +1,6 @@
 import React, { useEffect, useReducer, useContext } from "react";
-import Input from "../UI/Input";
-import MedicineContext from "../../Store/medicine-context";
+import Input from "../../UI/Input/Input";
+import MedicineContext from "../../../Store/Medicine/medicine-context";
 
 const medicineReducer = (state, action) => {
   switch (action.type) {
