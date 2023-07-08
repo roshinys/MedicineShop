@@ -1,5 +1,42 @@
+.list {
+  background-color: #fc2947;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 20px auto;
+  width: 400px;
+}
+
+.list h5 {
+  padding: 0 10px;
+}
+
+.list p {
+  padding: 0 10px;
+}
+
+.list span {
+  padding: 0 10px;
+}
+
+.list button {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  color: #1b262c;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.list button:hover {
+  background-color: #1b262c;
+  color: white;
+}
+
 .invalid {
+  background-color: #ccc;
   cursor: not-allowed;
-  opacity: 0.5;
-  pointer-events: none;
 }

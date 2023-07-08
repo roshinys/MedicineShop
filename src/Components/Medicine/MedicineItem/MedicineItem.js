@@ -20,11 +20,11 @@ function MedicineItem(props) {
     cartCtx.addCartItem(props.medicine);
   };
   return (
-    <li>
+    <li className={styles.list}>
       <h5>{props.medicine.medicineName}</h5>
       <p>{props.medicine.description}</p>
-      <p>${props.medicine.price}</p>
-      <p>{props.medicine.quantity}</p>
+      <span>${props.medicine.price}</span>
+      <span>{props.medicine.quantity}</span>
       <button
         onClick={updateQuantityHandler}
         className={!medAvailable ? styles.invalid : undefined}
