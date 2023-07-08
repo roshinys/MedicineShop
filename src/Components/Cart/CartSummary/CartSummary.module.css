@@ -12,10 +12,11 @@
 }
 
 .actions button {
+  color: white;
   font: inherit;
   cursor: pointer;
   background-color: transparent;
-  border: 1px solid #03c988;
+  border: 1px solid #fc2947;
   padding: 0.5rem 2rem;
   border-radius: 25px;
   margin-left: 1rem;
@@ -23,16 +24,16 @@
 
 .actions button:hover,
 .actions button:active {
-  background-color: #03c988;
-  border-color: #03c988;
+  background-color: #fc2947;
+  border-color: #fc2947;
   color: white;
 }
 
 .actions .closeCart {
-  color: #03c988;
+  color: #fc2947;
 }
 
 .actions .orderCart {
-  background-color: #03c988;
+  background-color: #fc2947;
   color: white;
 }
