@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fc2947;
+  height: 55px;
+  color: white;
+}
+
+.heading {
+  font-size: 20px;
+}
+
+.button {
+  border-radius: 10px;
+  padding: 10px;
+  width: 80px;
+  height: 35px;
+  border: none;
+
+  font-size: 15px;
+  background-color: white;
+  color: #1b262c;
+}
+
+.button:hover {
+  background-color: #1b262c;
+  color: white;
+}

@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import CartContext from "../../../Store/Cart/cart-context";
+import styles from "./Header.module.css";
 
 function Header() {
   const cartCtx = useContext(CartContext);
@@ -8,10 +9,12 @@ function Header() {
     cartCtx.openCart();
   };
   return (
-    <div>
-      <h5>Medicine Shop</h5>
-      <button onClick={cartClickHandler}>Cart</button>
-    </div>
+    <header className={styles.header}>
+      <h5 className={styles.heading}>Medicine Shop</h5>
+      <button className={styles.button} onClick={cartClickHandler}>
+        Cart
+      </button>
+    </header>
   );
 }
 
