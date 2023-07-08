@@ -1,0 +1,40 @@
+.medForm {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 35px auto;
+  background-color: #fc2947;
+  padding: 15px;
+  width: 30%;
+  border-radius: 20px;
+}
+
+.formHeading {
+  display: flex;
+  padding: 2px 0;
+  border-bottom: 1px solid white;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: white;
+  color: #1b262c;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 10px;
+  width: max-content;
+  position: relative;
+  left: 30%;
+}
+
+.button:hover {
+  background-color: #1b262c;
+  color: white;
+}
+
+.button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

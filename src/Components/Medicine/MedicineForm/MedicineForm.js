@@ -1,6 +1,7 @@
 import React, { useEffect, useReducer, useContext } from "react";
 import Input from "../../UI/Input/Input";
 import MedicineContext from "../../../Store/Medicine/medicine-context";
+import styles from "./MedicineForm.module.css";
 
 const medicineReducer = (state, action) => {
   switch (action.type) {
@@ -101,7 +102,8 @@ function MedicineForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className={styles.medForm}>
+      <h3 className={styles.formHeading}>Medicine</h3>
       <Input
         label="Medicine Name"
         type="text"
@@ -126,7 +128,9 @@ function MedicineForm() {
         value={medicineState.quantity}
         onChange={quantityChangeHandler}
       />
-      <button type="submit">Add Medicine</button>
+      <button className={styles.button} type="submit">
+        Add Medicine
+      </button>
     </form>
   );
 }
